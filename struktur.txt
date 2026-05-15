@@ -1,0 +1,61 @@
+resources/views/
+├── admin/
+│   ├── dashboard/
+│   │   └── index.blade.php
+│   │
+│   ├── fakultas/
+│   │   ├── index.blade.php
+│   │   ├── create.blade.php
+│   │   ├── edit.blade.php
+│   │   └── form.blade.php
+│   │
+│   ├── prodi/
+│   │   ├── index.blade.php
+│   │   ├── create.blade.php
+│   │   ├── edit.blade.php
+│   │   └── form.blade.php
+│   │
+│   ├── books/
+│   │   ├── index.blade.php
+│   │   ├── create.blade.php
+│   │   ├── edit.blade.php
+│   │   ├── show.blade.php
+│   │   └── form.blade.php
+│   │
+│   ├── skripsi/
+│   │   ├── index.blade.php
+│   │   ├── create.blade.php
+│   │   ├── edit.blade.php
+│   │   ├── show.blade.php
+│   │   └── form.blade.php
+│   │
+│   ├── staff/
+│   │   ├── index.blade.php
+│   │   ├── create.blade.php
+│   │   ├── edit.blade.php
+│   │   └── form.blade.php
+│   │
+│   └── users/
+│       ├── index.blade.php
+│       ├── create.blade.php
+│       ├── edit.blade.php
+│       └── form.blade.php
+│
+├── layouts/
+│   ├── admin.blade.php
+│   ├── navbar.blade.php
+│   ├── sidebar.blade.php
+│   └── footer.blade.php
+│
+├── components/
+│   ├── alert.blade.php
+│   ├── modal.blade.php
+│   ├── table.blade.php
+│   ├── empty.blade.php
+│   ├── input.blade.php
+│   └── button.blade.php
+│
+└── auth/
+    ├── login.blade.php
+    ├── forgot-password.blade.php
+    └── reset-password.blade.php

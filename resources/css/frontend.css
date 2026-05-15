@@ -1,0 +1,9 @@
+   [x-cloak] { display: none !important; }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(244, 247, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+        /* Custom scrollbar untuk tampilan lebih modern */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #3056D3; border-radius: 10px; }
+    
