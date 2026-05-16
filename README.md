@@ -23,7 +23,6 @@ Universitas Sains dan Teknologi Jayapura
 
 </div>
 
-
 ---
 
 # Panduan Setup SI Perpustakaan USTJ
