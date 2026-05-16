@@ -1,7 +1,7 @@
 # SI Perpustakaan USTJ
 
 <p align="center">
-    <img src="public/assets/images/logo-ustj.png" width="120" alt="Logo USTJ">
+    <img src="https://assets.siakadcloud.com/uploads/ustj/logoaplikasi/1149.jpg" width="120" alt="Logo USTJ">
 </p>
 
 <h3 align="center">
