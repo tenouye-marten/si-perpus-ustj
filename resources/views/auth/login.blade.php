@@ -38,9 +38,10 @@
                     <div
                         class="mb-8 flex h-16 w-16 items-center justify-center rounded-2xl border border-white/10 bg-white/10 shadow-lg">
 
-                        <span class="text-2xl font-black text-cyan-300">
-                            U
-                        </span>
+                         <img
+        src="{{ asset('logo.png') }}"
+        alt="Logo USTJ"
+        class="h-8 w-8 object-contain">
 
                     </div>
 

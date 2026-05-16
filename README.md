@@ -1,59 +1,512 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# SI Perpustakaan USTJ
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+    <img src="public/assets/images/logo-ustj.png" width="120" alt="Logo USTJ">
 </p>
 
-## About Laravel
+<h3 align="center">
+Sistem Informasi Perpustakaan USTJ
+</h3>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+# Panduan Setup SI Perpustakaan USTJ
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Tentang Project
 
-## Learning Laravel
+SI Perpustakaan USTJ merupakan sistem informasi perpustakaan berbasis Laravel yang digunakan untuk:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+* Manajemen staff
+* Struktur organisasi
+* Katalog buku
+* Skripsi / KTI
+* Authentication
+* Role & permission
+* Frontend perpustakaan modern
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+# Persyaratan Sistem
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Sebelum menjalankan project, pastikan komputer sudah memiliki:
 
-### Premium Partners
+| Software | Versi   |
+| -------- | ------- |
+| PHP      | 8.2+    |
+| Laravel  | 12      |
+| Composer | Terbaru |
+| Node.js  | 18+     |
+| MySQL    | 8+      |
+| Git      | Terbaru |
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+# Teknologi Yang Digunakan
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Backend
 
-## Code of Conduct
+* Laravel 12
+* PHP 8+
+* MySQL
+* Spatie Permission
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Frontend
 
-## Security Vulnerabilities
+* Blade
+* Tailwind CSS
+* Alpine JS
+* Vite
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+# Persiapan Sebelum Menjalankan Project
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Pastikan laptop / komputer sudah terinstall:
+
+## Wajib Install
+
+* PHP
+* Composer
+* Node.js
+* Git
+* MySQL / XAMPP / Laragon
+
+---
+
+# Cara Download dan Menjalankan Project
+
+## 1. Clone Repository
+
+Buka terminal lalu jalankan:
+
+```bash
+git clone https://github.com/USERNAME/si-perpus-ustj.git
+```
+
+---
+
+## 2. Masuk Ke Folder Project
+
+```bash
+cd si-perpus-ustj
+```
+
+---
+
+# Install Dependency
+
+## Install Composer
+
+```bash
+composer install
+```
+
+---
+
+## Install Node Modules
+
+```bash
+npm install
+```
+
+---
+
+# Setup ENV
+
+## Copy File ENV
+
+### Windows
+
+```bash
+copy .env.example .env
+```
+
+### Linux / Git Bash
+
+```bash
+cp .env.example .env
+```
+
+---
+
+## Generate APP KEY
+
+```bash
+php artisan key:generate
+```
+
+---
+
+# Setup Database
+
+## 1. Buat Database
+
+Buat database baru di phpMyAdmin:
+
+```text
+si_perpus_ustj
+```
+
+---
+
+## 2. Atur Database di ENV
+
+Buka file `.env`
+
+```env
+DB_DATABASE=si_perpus_ustj
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+---
+
+# Migration dan Seeder
+
+## Jalankan Migration + Seeder
+
+```bash
+php artisan migrate --seed
+```
+
+---
+
+## Jika Ingin Reset Database
+
+```bash
+php artisan migrate:fresh --seed
+```
+
+---
+
+# Storage Link
+
+```bash
+php artisan storage:link
+```
+
+---
+
+# Menjalankan Project
+
+## Terminal 1
+
+```bash
+php artisan serve
+```
+
+---
+
+## Terminal 2
+
+```bash
+npm run dev
+```
+
+---
+
+# URL Project
+
+```text
+http://127.0.0.1:8000
+```
+
+---
+
+# Cara Mengambil Project Dari Repository GitHub
+
+## 1. Clone Repository
+
+Buka terminal:
+
+```bash
+cd Desktop
+```
+
+Clone project:
+
+```bash
+git clone https://github.com/USERNAME/si-perpus-ustj.git
+```
+
+---
+
+## 2. Masuk Folder Project
+
+```bash
+cd si-perpus-ustj
+```
+
+---
+
+# Install Dependency Laravel
+
+## 1. Install Composer
+
+```bash
+composer install
+```
+
+---
+
+## 2. Install Node Modules
+
+```bash
+npm install
+```
+
+---
+
+# Setup File ENV
+
+## 1. Copy ENV
+
+### Windows
+
+```bash
+copy .env.example .env
+```
+
+### Git Bash / Linux / MacOS
+
+```bash
+cp .env.example .env
+```
+
+---
+
+## 2. Generate APP_KEY
+
+```bash
+php artisan key:generate
+```
+
+---
+
+# Setup Database
+
+## 1. Buat Database
+
+Buka phpMyAdmin lalu buat database:
+
+```text
+si_perpus_ustj
+```
+
+---
+
+## 2. Atur ENV Database
+
+Buka file `.env`
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=si_perpus_ustj
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+Sesuaikan dengan komputer masing-masing.
+
+---
+
+# Migration dan Seeder
+
+## Jalankan Migration
+
+```bash
+php artisan migrate --seed
+```
+
+Atau reset database:
+
+```bash
+php artisan migrate:fresh --seed
+```
+
+---
+
+# Storage Link
+
+WAJIB dijalankan agar upload gambar tampil.
+
+```bash
+php artisan storage:link
+```
+
+---
+
+# Menjalankan Project
+
+## Terminal 1
+
+```bash
+php artisan serve
+```
+
+---
+
+## Terminal 2
+
+```bash
+npm run dev
+```
+
+---
+
+# URL Project
+
+```text
+http://127.0.0.1:8000
+```
+
+---
+
+# Struktur Database Tambahan
+
+Project menggunakan table:
+
+```text
+cache
+cache_locks
+sessions
+jobs
+failed_jobs
+```
+
+Migration harus dijalankan sebelum menggunakan:
+
+```env
+CACHE_STORE=database
+```
+
+---
+
+# Workflow Development
+
+## Setelah Mengubah Kode
+
+```bash
+git add .
+git commit -m "Update fitur"
+git push
+```
+
+---
+
+# Cara Update Project Dari GitHub
+
+```bash
+git pull
+```
+
+---
+
+# Cara Pindah Project Via Flashdisk
+
+## Yang Disarankan Tidak Ikut
+
+Hapus:
+
+```text
+vendor/
+node_modules/
+```
+
+Lalu copy project.
+
+---
+
+## Setelah Dipindah
+
+Jalankan:
+
+```bash
+composer install
+npm install
+```
+
+---
+
+# Perintah Penting Laravel
+
+## Clear Cache
+
+```bash
+php artisan optimize:clear
+```
+
+---
+
+## Jalankan Seeder
+
+```bash
+php artisan db:seed
+```
+
+---
+
+## Generate Storage Link
+
+```bash
+php artisan storage:link
+```
+
+---
+
+# Catatan Penting
+
+## Jangan Upload Ke GitHub
+
+```text
+.env
+vendor/
+node_modules/
+```
+
+---
+
+## Yang Wajib Ada di Repository
+
+* migration
+* seeder
+* routes
+* controllers
+* models
+* views
+* assets
+
+---
+
+# Struktur Organisasi Sistem
+
+Project menggunakan struktur:
+
+* Kepala
+* Koordinator
+* Staff
+
+Dengan field:
+
+* nama
+* jabatan
+* level
+* bidang
+* urutan
+* foto
+
+---
+
+# Penutup
+
+SI Perpustakaan USTJ telah disiapkan menggunakan standar Laravel modern sehingga:
+
+* scalable
+* aman
+* production ready
+* mudah dipindahkan antar laptop
+* mudah dikembangkan kembali
+* mendukung multi user
+* mendukung role & permission
