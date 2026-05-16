@@ -1,32 +1,29 @@
+<div align="center">
+
+<img 
+    src="https://assets.siakadcloud.com/uploads/ustj/logoaplikasi/1149.jpg" 
+    width="120" 
+    alt="Logo USTJ">
+
 # SI Perpustakaan USTJ
 
-<p align="center">
-    <img 
-        src="https://assets.siakadcloud.com/uploads/ustj/logoaplikasi/1149.jpg" 
-        width="120" 
-        alt="Logo USTJ">
-</p>
+### Sistem Informasi Perpustakaan  
+Universitas Sains dan Teknologi Jayapura
 
-<h2 align="center">
-    Sistem Informasi Perpustakaan USTJ
-</h2>
+<br>
 
-<p align="center">
-    Website Sistem Informasi Perpustakaan Universitas Sains dan Teknologi Jayapura
-</p>
+<img src="https://img.shields.io/badge/Disclaimer-Latihan%20Project-DC2626?style=for-the-badge&logo=warning&logoColor=white">
 
-<p align="center">
-    <img src="https://img.shields.io/badge/Laravel-12-red?style=flat-square">
-    <img src="https://img.shields.io/badge/PHP-8.2+-blue?style=flat-square">
-    <img src="https://img.shields.io/badge/TailwindCSS-3.x-38BDF8?style=flat-square">
-    <img src="https://img.shields.io/badge/MySQL-8+-orange?style=flat-square">
-</p>
+<br><br>
 
-<p align="center">
-    ⚠️ Disclaimer: Project ini dibuat untuk kebutuhan pembelajaran dan latihan pengembangan aplikasi berbasis Laravel.
-</p>
+<img src="https://img.shields.io/badge/Laravel-12-FF2D20?style=for-the-badge&logo=laravel&logoColor=white">
+<img src="https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white">
+<img src="https://img.shields.io/badge/TailwindCSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white">
+<img src="https://img.shields.io/badge/MySQL-8+-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
 
----
+</div>
+
+
 
 
 ---
