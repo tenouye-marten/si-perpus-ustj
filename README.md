@@ -95,7 +95,7 @@ Pastikan laptop / komputer sudah terinstall:
 Buka terminal lalu jalankan:
 
 ```bash
-git clone https://github.com/USERNAME/si-perpus-ustj.git
+https://github.com/tenouye-marten/si-perpus-ustj.git
 ```
 
 ---
